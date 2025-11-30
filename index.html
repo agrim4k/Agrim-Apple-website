@@ -3,428 +3,527 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple website</title>
+    <title>Apple India - Replica</title>
     <link rel="stylesheet" href="style.css">
-    
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Top Navigation Header with Scroll Spy -->
     <header class="top-nav">
         <div class="logo">
-            <a href="#"><i class="fab fa-apple"></i></a>
+            <a href="#"><i class="fab fa-apple"></i></a> <!-- Apple logo using Font Awesome -->
         </div>
-        <nav class="nav menu">
-          <ul>
-                <li><a href="#mac-solution"></a></li>
-                <li><a href="#ipad-solution"></a></li>
-                <li><a href="#iphone-solution"></a></li>
-                <li><a href="#watch-solution"></a></li>
-                <li><a href="#airpods-solution"></a></li>
-                <li><a href="#tv-solution"></a></li> 
-                <li><a href="#entertainment-solution"></a></li>
-                <li><a href="#accesories-solution"></a></li>
-                <li><a href="#support"></a></li>
-                <li><a href="#"><i class="fab fa-search"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#mac-section">Mac</a></li>
+                <li><a href="#ipad-section">iPad</a></li>
+                <li><a href="#iphone-section">iPhone</a></li>
+                <li><a href="#watch-section">Watch</a></li>
+                <li><a href="#airpods-section">AirPods</a></li>
+                <li><a href="#Tv & Home-section">Home</a></li>
+                <li><a href="#entertainment-section">Entertainment</a></li>
+                <li><a href="#Accessories-section">Accessories</a></li>
+                <li><a href="#">Support</a></li>
+                <li class="search"><a href="#" id="search-toggle-link"><i class="fas fa-search"></i></a></li>
+                <li class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
         </nav>
-        <div id="mobile nav" class="mobile nav">
-            <li><a href="#macsolution"></a></li>
-                <li><a href="#ipadsolution"></a></li>
-                <li><a href="#iphonesolution"></a></li>
-                <li><a href="#watchsolution"></a></li>
-                <li><a href="#airpodssolution"></a></li>
-                <li><a href="#tvsolution"></a></li>
-                <li><a href="#entertainmentsolution"></a></li>
-                <li><a href="#accesoriessolution"></a></li>
-                <li><a href="#supportsolution"></a></li>
+        <!-- Mobile Navigation -->
+        <div id="mobile-nav" class="mobile-nav">
+            <ul>
+                <li><a href="#mac-section">Mac</a></li>
+                <li><a href="#ipad-section">iPad</a></li>
+                <li><a href="#iphone-section">iPhone</a></li>
+                <li><a href="#watch-section">Watch</a></li>
+                <li><a href="#airpods-section">AirPods</a></li>
+                <li><a href="#Tv & Home-section">Home</a></li>
+                <li><a href="#entertainment-section">Entertainment</a></li>
+                <li><a href="#Accessories-section">Accessories</a></li>
+                <li><a href="#support-section">Support</a></li>
+            </ul>
         </div>
-        <button class="menu" toggle id="menu" toggle class="fas fa-bars">
-        </button>
+
+        <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button> <!-- Mobile Menu Button -->
     </header>
-    <section class="hero" section id="iphone-hero">
-        <video autoplay muted loop class hero-video></video>
-        <source src="iphone.mp4" type="video/mp4">
+
+    <!-- Hero Section for iPhone -->
+    <section class="hero-section" id="iphone-hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="resources/iphone.mp4" type="video/mp4">
+        </video>
         <div class="hero-text-card">
-            <h1>Iphone 15</h1>
-            <p>Wonderfully Capable</p>
+            <h1>iPhone 15</h1>
+            <p>Wonderfully capable.</p>
             <ul>
-                <li>6.1 inch now comes with retina xdr display: The best display</li>
-                <li>New A17 Bionic chip for incredible performance</li>
-                <li>Start  with the world's best AI: Apple Intelligence </li>
-                <li>Now even better with Liquid Glass</li>
-                <li>Advanced dual-camera system with night mode, and clean-up filters and do more with Apple Intelligence</li>
-            </ul>
-            <div class="hero-buttons">
-                <a href="#" class="hero-btn">Learn More</a>
-                <a href="#" class="hero-btn">Buy</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="product-section" id="iphone-section">
-    <h2>Iphone</h2>
-    <div class="product-grid">
-        <div class="product-card">
-            <img src="iphone 15.png" alt="iphone 15">
-            <h3>Iphone 15</h3>
-            <p>Woderfully Capable</p>
-            <div class="product-price">Starting at ₹49,000 </div>
-            <a href="#" class="product-btn">Learn More</a>
-            <a href="#" class="product-btn">Buy</a>
-        </div>
-        <div class="product-card">
-            <img src="iphone 14.png" alt="iphone 14">
-            <h3>Iphone 14</h3>
-            <p>Still the best choice</p>
-            <div class="product-price">Starting at ₹41,990 </div>
-            <a href="#" class="product-btn">Learn More</a>
-            <a href="#" class="product-btn">Buy</a>
-        <div class="product-card">
-            <img src="iphone se.png" alt="iphone se">
-            <h3>Iphone se</h3>
-            <p>most affordable</p>
-            <div class="product-price">Starting at ₹11,000 </div>
-            <a href="#" class="product-btn">Learn More</a>
-            <a href="#" class="product-btn">Buy</a>
-    </div>
-
-        </div>
-
-
-        <div class="comparison-section">
-            <h3>compare Iphone Models</h3>
-            <div class="comparison-grid">
-                <div class=comparison-card>
-                    <img src="iphone 15.png" alt="Iphone 15">
-                    <h4>Iphone 15</h4>
-                    <ul>
-                        <li><i class="fas fa-check"></i>A 17 Bionic Chip</li>
-                        <li><i class="fas fa-check"></i>6.1 Inch Display</li>
-                        <li><i class="fas fa-check"></i>Dual Camera System</li>
-                        <li><i class="fas fa-check"></i>48MP Main Camera</li>
-                        <li><i class="fas fa-check"></i>4k videos</li>
-                    </ul>
-                    <div class="comparison-price">₹6999</div>
-                    <a href="#" class="product-btn">Buy Now</a>
-            </div>
-
-            <div class=comparison-card>
-                    <img src="iphone 14.png" alt="Iphone 14">
-                    <h4>Iphone 14</h4>
-                    <ul>
-                        <li><i class="fas fa-check"></i>A 16 Bionic Chip</li>
-                        <li><i class="fas fa-check"></i>6.1 Inch Display</li>
-                        <li><i class="fas fa-check"></i>Dual Camera System</li>
-                        <li><i class="fas fa-check"></i>12MP Main Camera</li>
-                        <li><i class="fas fa-check"></i>4k videos</li>
-                    </ul>
-                    <div class="comparison-price">₹6999</div>
-                    <a href="#" class="product-btn">Buy Now</a>
-        </div>
-
-        <div class=comparison-card>
-                    <img src="iphone SE.png" alt="Iphone SE">
-                    <h4>Iphone SE</h4>
-                    <ul>
-                        <li><i class="fas fa-check"></i>A 15 Bionic Chip</li>
-                        <li><i class="fas fa-check"></i>4.7 Inch Display</li>
-                        <li><i class="fas fa-check"></i>Single-Camera System</li>
-                        <li><i class="fas fa-check"></i>12MP Main Camera</li>
-                        <li><i class="fas fa-check"></i>4k videos</li>
-                    </ul>
-                    <div class="comparison-price">₹6999</div>
-                    <a href="#" class="product-btn">Buy Now</a>
-               </div>
-            </div>
-        </div>
-     </section>
-
-
-
-     <!--Hero Section for ipads-->
-     <section class="hero-section" id="ipad-hero">
-        <video autoplay muted loop class="hero-video">
-            <source src="pad.mp4" type="video/mp4">
-        </video>
-        <div class="Ipad Pro">
-            <h1>Ipad PRO</h1>
-            <p>Supercharged by M5 </p>
-            <ul>
-                <li>13 Inch Liquid Retina XDR Display</li>
-                <li>Powered by M5</li>
-                <li>Support for Apple Pencil Pro</li>
-            </ul>
-            <div class="hero-buttons">
-                <a href="#" class="hero-btn">Learn More</a>
-                <a href="#" class="hero-btn">Buy</a>
-            </div>
-        </div>
-     </section>
-
-
-     <!--Ipad section-->
-
-     <section class="product-section" id="ipad-section">
-        <h2>Ipad</h2>
-        <div class="product-grid">
-            <div class="product-class">
-                <img src="ipad pro.png" alt="Ipad Pro">
-                <h3>Ipad Pro</h3>
-                <p>Supercharged by M5</p>
-                <div class="product-price">Starting at ₹1,29,900</div>
-                <a href="#" class="product-btn">Learn More</a>
-                <a href="#" class="product-btn">Buy</a>
-            </div>
-              
-            <div class="product-div">
-                <img src="ipad air.png" alt="Ipad air">
-                <h3>Ipad air</h3>
-                <p>Supercharged by M5</p>
-                <div class="product-price">Starting at ₹1,12,900</div>
-                <a href="#" class="product-btn">Learn More</a>
-                <a href="#" class="product-btn">Buy</a>
-
-                <div class="product-div">
-                    <img src="ipad.png" alt="Ipad ">
-                <h3>Ipad</h3>
-                <p>Supercharged by M5</p>
-                <div class="product-price">Starting at ₹1,10,900</div>
-                <a href="#" class="product-btn">Learn More</a>
-                <a href="#" class="product-btn">Buy</a>
-            </div>
-                </div>
-
-                <div class="comparison-section">
-                    <h3>Compare Ipad Models</h3>
-                    <div class="comparison-grid">
-                        <div class="comparison-card">
-                            <img src="ipad pro.png" alt="ipad pro">
-                            <h4>Ipad pro</h4>
-                            <ul>
-                                <li><i class="fas fa-check"></i>M5 chip</li>
-                                <li><i class="fas fa-check"></i>13 Inch display</li>
-                                <li><i class="fas fa-check"></i>Dual Camera System</li>
-                                <li><i class="fas fa-check"></i>48MP Main Camera</li>
-                                <li><i class="fas fa-check"></i>4k Videos</li>
-                            </ul>
-                            <div class="comparison-price">Starting at ₹1,29,900</div>
-                            <a href="#" class="product-btn">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!--Herosection for Mac-->
-        <section class="hero-section" id="mac-hero">
-            <video class="hero-video" autoplay muted loop>
-                <source src="mac.mp4" type="video/mp4">
-            </video>
-            <div class="hero-text-card">
-                <h1>Macbook Pro</h1>
-                <p>Supercharged with M5</p>
-                <ul>
-                    <li>14.2 Inch Liquid xdr retina display</li>
-                    <li>Upto 64Gb of Unified Memory</li>
-                    <li>Advanced thermal systems for better performances</li>
-                    <li>Six speaker sound system with studio quality mics</li>
-                </ul>
-                <div class="hero-buttons">
-                    <a href="#" class="hero-btn">Learn More</a>
-                    <a href="#" class="hero-btn">Buy</a>
-
-                    <!--Mac-section-->
-                    <section class="product-section" id="mac-solution">
-                        <div class="product-grid">
-                            <div class="product-card">
-                                <img src="macbook air.png" alt="Macbook Air">
-                                <h3>Macbook Air</h3>
-                                <p>supercharged by M5</p>
-                                <div class="product-price">Starting at ₹2,09,900</div>
-                                <a href="#" class="hero-btn">Learn More</a>
-                                <a href="#" class="hero-btn">Buy</a>
-                            </div>
-                            <div class="product-card">
-                                <img src="macbook pro.png" alt="Macbook pro">
-                                <h3>Macbook pro</h3>
-                                <p>supercharged by M5 and has the power to create anything</p>
-                                <div class="product-price">Starting at ₹2,09,900</div>
-                                <a href="#" class="hero-btn">Learn More</a>
-                                <a href="#" class="hero-btn">Buy</a>
-                            </div>
-                            <div class="product-card">
-                                <img src="i mac.png" alt="i mac">
-                                <h3>I mac</h3>
-                                <p>all in one kind of display</p>
-                                <div class="product-price">Starting at ₹3,09,900</div>
-                                <a href="#" class="hero-btn">Learn More</a>
-                                <a href="#" class="hero-btn">Buy</a>
-                </div>
-            </div>
-            <div class="comparison-section">
-                <h3>Compare Mac Models</h3>
-                <div class="comparison-grid">
-                    <div class="comparison-card">
-                        <img src="macbook air.png" alt="Macbook Air">
-                        <h4> Macbook Air</h4>
-                        <ul>
-                            <li><i class=fas fa-check>M5 chip</i></li>
-                            <li><i class=fas fa-check>14.2 Inch display</i></li>
-                            <li><i class=fas fa-times>no touch bar</i></li>
-                            <li><i class=fas fa-check>1080p facetime HD cameras</i></li>
-                            li><i class=fas fa-check>18-hour battery life</i></li>
-                        </ul>
-
-                        <div class="comparison-price">₹2,09,900</div>
-                        <a href="#" class="product-btn">Buy Now</a>
-                    </div>
-
-                    <div class="comparison-card">
-                        <img src="macbook pro.png" alt="Macbook pro">
-                        <h4>Macbook Pro</h4>
-                        <ul>
-                            <li><i class="fas fa-check">M5 chip</i></li>
-                            <li><i class="fas fa-check">14.inch display</i></li>
-                            <li><i class="fas fa-limes">touch bar</i></li>
-                            <li><i class="fas fa-check">1080p facetime HD cameras</i></li>
-                            <li><i class="fas fa-check">20 hour battery life</i></li>
-                        </ul>
-                        <div class="comparison-price">Starting at ₹26650.00</div>
-                        <a href="#" class="product-btn">Buy Now</a>
-                    </div>
-
-
-
-                    <div class="comparison-card"></div>
-                    <img src="i mac.png" alt="Imac">
-                    <h4>I mac</h4>
-                    <ul>
-                        <li><i class="fas fa-check">M4 chip</i></li>
-                        <li><i class="fas fa-check">24 inch 4.5k retina Display</i></li>
-                        <li><i class="fas fa-limes">No touch bar</i></li>
-                        <li><i class="fas fa-check">1080p facetime HD camera</i></li>
-                        <li><i class="fas fa-check">upto to 18 hours of battery life</i></li>
-                    </ul>
-                </div>
-
-                <div class="comparison-price">Starting at ₹1,34,900</div>
-                <a href="#" class="product-btn">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="hero-section" id="watch-hero">
-        <video autoplay muted loop class="hero-video">
-            <source src="watch.mp4" type="video/mp4">
-        </video>
-        <div class="hero-text">
-            <h1>Apple watch Ultra</h1>
-            <p>Adventure awaits</p>
-            <ul>
-                <li>49mm Titanium case</li>
-                <li>Dual-frequency gps and celluar</li>
-                <li>wr100 water ressistance</li>
+                <li>6.1-inch Super Retina XDR display</li>
+                <li>New A18 Bionic Chip for incredible performance</li>
+                <li>Advanced dual-camera system with Night mode</li>
             </ul>
             <div class="hero-buttons">
                 <a href="#" class="hero-btn">Learn more</a>
-                <a href="#" class="product-btn">Buy</a>
-  
+                <a href="#" class="hero-btn" data-product-name="iphone 15">Buy</a>
             </div>
         </div>
     </section>
 
-    <!--Watch section-->
+    <!-- iPhone Section -->
+    <section class="product-section" id="iphone-section">
+        <h2>iPhone</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="resources/iphone 15.png" alt="iPhone 15">
+                <h3>iPhone 15</h3>
+                <p>Wonderfully capable.</p>
+                <div class="product-price">Starting at ₹79,900</div>
+                <a href="#" class="product-btn" data-product-name="iphone 15">Learn more</a>
+                <a href="#" class="product-btn">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="resources/iphone 14.png" alt="iPhone 14">
+                <h3>iPhone 14</h3>
+                <p>Still the best choice.</p>
+                <div class="product-price">Starting at ₹69,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="iphone 14">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="resources/iphone se.png" alt="iPhone SE">
+                <h3>iPhone SE</h3>
+                <p>Most affordable option.</p>
+                <div class="product-price">Starting at ₹49,900</div>
+                <a href="#" class="product-btn"data-product-name="iphone SE">Learn more</a>
+                <a href="#" class="product-btn">Buy</a>
+            </div>
+        </div>
+        <div class="comparison-section">
+            <h3>Compare iPhone Models</h3>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <img src="resources/iphone 15.png" alt="iPhone 15">
+                    <h4>iPhone 15</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> A17 Bionic Chip</li>
+                        <li><i class="fas fa-check"></i> 6.1-inch display</li>
+                        <li><i class="fas fa-check"></i> Dual-camera system</li>
+                        <li><i class="fas fa-check"></i> 48MP Main Camera</li>
+                        <li><i class="fas fa-check"></i> 4K Video</li>
+                    </ul>
+                    <div class="comparison-price">₹79,900</div>
+                    <a href="#" class="product-btn" data-product-name="iphone 15">Buy Now</a>
+                </div>
+                <div class="comparison-card">
+                    <img src="resources/iphone 14.png" alt="iPhone 14">
+                    <h4>iPhone 14</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> A16 Bionic Chip</li>
+                        <li><i class="fas fa-check"></i> 6.1-inch display</li>
+                        <li><i class="fas fa-check"></i> Dual-camera system</li>
+                        <li><i class="fas fa-check"></i> 12MP Main Camera</li>
+                        <li><i class="fas fa-check"></i> 4K Video</li>
+                    </ul>
+                    <div class="comparison-price">₹69,900</div>
+                    <a href="#" class="product-btn" data-product-name="iphone 14">Buy Now</a>
+                </div>
+                <div class="comparison-card">
+                    <img src="resources/iphone se.png" alt="iPhone SE">
+                    <h4>iPhone SE</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> A15 Bionic Chip</li>
+                        <li><i class="fas fa-times"></i> 4.7-inch display</li>
+                        <li><i class="fas fa-times"></i> Single-camera system</li>
+                        <li><i class="fas fa-check"></i> 12MP Main Camera</li>
+                        <li><i class="fas fa-times"></i> 4K Video</li>
+                    </ul>
+                    <div class="comparison-price">₹49,900</div>
+                    <a href="#" class="product-btn" data-product-name="iphone SE">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section for iPad -->
+    <section class="hero-section" id="ipad-hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="resources/pad.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text-card">
+            <h1>iPad Pro</h1>
+            <p>Supercharged by M2.</p>
+            <ul>
+                <li>12.9-inch Liquid Retina XDR display</li>
+                <li>Powerful M2 Chip</li>
+                <li>Support for Apple Pencil (2nd generation)</li>
+            </ul>
+            <div class="hero-buttons">
+                <a href="#" class="hero-btn">Learn more</a>
+                <a href="#" class="hero-btn"data-product-name="ipad pro">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- iPad Section -->
+    <section class="product-section" id="ipad-section">
+        <h2>iPad</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="resources/ipad pro.png" alt="iPad Pro">
+                <h3>iPad Pro</h3>
+                <p>Supercharged by M2.</p>
+                <div class="product-price">Starting at ₹81,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="ipad pro">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="resources/ipad air.png" alt="iPad Air">
+                <h3>iPad Air</h3>
+                <p>Light. Bright. Full of might.</p>
+                <div class="product-price">Starting at ₹59,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="ipad air">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="resources/ipad.png" alt="iPad">
+                <h3>iPad</h3>
+                <p>Delightfully capable.</p>
+                <div class="product-price">Starting at ₹44,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="ipad">Buy</a>
+            </div>
+        </div>
+        <div class="comparison-section">
+            <h3>Compare iPad Models</h3>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <img src="resources/ipad pro.png" alt="iPad Pro">
+                    <h4>iPad Pro</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> M2 Chip</li>
+                        <li><i class="fas fa-check"></i> 12.9-inch display</li>
+                        <li><i class="fas fa-check"></i> Dual-camera system</li>
+                        <li><i class="fas fa-check"></i> 48MP Main Camera</li>
+                        <li><i class="fas fa-check"></i> 4K Video</li>
+                    </ul>
+                    <div class="comparison-price">₹81,900</div>
+                    <a href="#" class="product-btn"data-product-name="ipad pro">Buy Now</a>
+                </div>
+                <div class="comparison-card">
+                    <img src="resources/ipad air.png" alt="iPad Air">
+                    <h4>iPad Air</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> M1 Chip</li>
+                        <li><i class="fas fa-check"></i> 10.9-inch display</li>
+                        <li><i class="fas fa-check"></i> Single-camera system</li>
+                        <li><i class="fas fa-check"></i> 12MP Main Camera</li>
+                        <li><i class="fas fa-check"></i> 4K Video</li>
+                    </ul>
+                    <div class="comparison-price">₹59,900</div>
+                    <a href="#" class="product-btn"data-product-name="ipad air">Buy Now</a>
+                </div>
+                <div class="comparison-card">
+                    <img src="resources/ipad.png" alt="iPad">
+                    <h4>iPad</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> A14 Bionic Chip</li>
+                        <li><i class="fas fa-times"></i> 10.2-inch display</li>
+                        <li><i class="fas fa-times"></i> Single-camera system</li>
+                        <li><i class="fas fa-check"></i> 12MP Main Camera</li>
+                        <li><i class="fas fa-times"></i> 4K Video</li>
+                    </ul>
+                    <div class="comparison-price">₹44,900</div>
+                    <a href="#" class="product-btn"data-product-name="ipad">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section for Mac -->
+    <section class="hero-section" id="mac-hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="resources/mac.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text-card">
+            <h1>MacBook Pro</h1>
+            <p>Supercharged by M2 Pro.</p>
+            <ul>
+                <li>14.2-inch Liquid Retina XDR display</li>
+                <li>Up to 64GB of unified memory</li>
+                <li>Advanced thermal systems for better performance</li>
+                <li>Six-speaker sound system with studio-quality mics</li>
+            </ul>
+            <div class="hero-buttons">
+                <a href="#" class="hero-btn">Learn more</a>
+                <a href="#" class="hero-btn"data-product-name="macbook pro">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mac Section -->
+    <section class="product-section" id="mac-section">
+        <h2>Mac</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="resources/macbook air.png" alt="MacBook Air">
+                <h3>MacBook Air</h3>
+                <p>Supercharged by M2</p>
+                <div class="product-price">Starting at ₹92,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="macbook air">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="resources/macbook pro.png" alt="MacBook Pro">
+                <h3>MacBook Pro</h3>
+                <p>The power to create anything.</p>
+                <div class="product-price">Starting at ₹1,22,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="macbook pro">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="resources/i mac.png" alt="iMac">
+                <h3>iMac</h3>
+                <p>The all-in-one for all kinds of work and play.</p>
+                <div class="product-price">Starting at ₹1,19,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="i mac">Buy</a>
+            </div>
+        </div>
+        <div class="comparison-section">
+            <h3>Compare Mac Models</h3>
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <img src="resources/macbook air.png" alt="MacBook Air">
+                    <h4>MacBook Air</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> M2 Chip</li>
+                        <li><i class="fas fa-check"></i> 13.6-inch display</li>
+                        <li><i class="fas fa-times"></i> No Touch Bar</li>
+                        <li><i class="fas fa-check"></i> 1080p FaceTime HD Camera</li>
+                        <li><i class="fas fa-check"></i> 18-hour battery life</li>
+                    </ul>
+                    <div class="comparison-price">₹92,900</div>
+                    <a href="#" class="product-btn"data-product-name="macbook air">Buy Now</a>
+                </div>
+                <div class="comparison-card">
+                    <img src="resources/macbook pro.png" alt="MacBook Pro">
+                    <h4>MacBook Pro</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> M2 Pro Chip</li>
+                        <li><i class="fas fa-check"></i> 14.2-inch display</li>
+                        <li><i class="fas fa-check"></i> Touch Bar</li>
+                        <li><i class="fas fa-check"></i> 1080p FaceTime HD Camera</li>
+                        <li><i class="fas fa-check"></i> 20-hour battery life</li>
+                    </ul>
+                    <div class="comparison-price">₹1,22,900</div>
+                    <a href="#" class="product-btn"data-product-name="macbook pro">Buy Now</a>
+                </div>
+                <div class="comparison-card">
+                    <img src="resources/i mac.png" alt="iMac">
+                    <h4>iMac</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> M1 Chip</li>
+                        <li><i class="fas fa-check"></i> 24-inch 4.5K Retina display</li>
+                        <li><i class="fas fa-times"></i> No Touch Bar</li>
+                        <li><i class="fas fa-check"></i> 1080p FaceTime HD Camera</li>
+                        <li><i class="fas fa-check"></i> Up to 18-hour battery life</li>
+                    </ul>
+                    <div class="comparison-price">₹1,19,900</div>
+                    <a href="#" class="product-btn"data-product-name="i mac">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section for Watch -->
+    <section class="hero-section" id="watch-hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="resources/watch.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text-card">
+            <h1>Apple Watch Ultra</h1>
+            <p>Adventure awaits.</p>
+            <ul>
+                <li>49mm Titanium case</li>
+                <li>Dual-frequency GPS</li>
+                <li>WR100 water resistance</li>
+                <li>Up to 36 hours of battery life</li>
+            </ul>
+            <div class="hero-buttons">
+                <a href="#" class="hero-btn">Learn more</a>
+                <a href="#" class="hero-btn"data-product-name="watch ultra">Buy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Watch Section -->
     <section class="product-section" id="watch-section">
         <h2>Watch</h2>
         <div class="product-grid">
             <div class="product-card">
-                <img src="watch ulta.png" alt="watch ultra">
-                <h3>Apple watch ultra</h3>
-                <p>Adventure Awaits</p>
+                <img src="resources/watch ultra.png" alt="Apple Watch Ultra">
+                <h3>Apple Watch Ultra</h3>
+                <p>Adventure awaits.</p>
                 <div class="product-price">Starting at ₹89,900</div>
                 <a href="#" class="product-btn">Learn more</a>
-                <a href="#" class="product-btn">Buy</a>
+                <a href="#" class="product-btn"data-product-name="watch ultra">Buy</a>
             </div>
             <div class="product-card">
-                <img src="watch-png" alt="Apple watch series 8">
-                <h3>Apple watch series</h3>
-                <p>A healty leap ahead</p>
-                <div class="product-price">starting at ₹29,900</div>
-                <a href="#" class="product-btn">Learn More</a>
-                <a href="#" class="product-btn">Buy</a>
+                <img src="resources/watch.png" alt="Apple Watch Series 8">
+                <h3>Apple Watch Series 8</h3>
+                <p>A healthy leap ahead.</p>
+                <div class="product-price">Starting at ₹59,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="watch 8">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="resources/watch se.png" alt="Apple Watch SE">
+                <h3>Apple Watch SE</h3>
+                <p>More capability. More value.</p>
+                <div class="product-price">Starting at ₹29,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="watch SE">Buy</a>
             </div>
         </div>
-
-        <div class="comparison-card">
-            <h3>compare watch models</h3>
+        <div class="comparison-section">
+            <h3>Compare Watch Models</h3>
             <div class="comparison-grid">
                 <div class="comparison-card">
-                    <img src="watch ultra.png" alt="Apple Watch Ultra">
+                    <img src="resources/watch ultra.png" alt="Apple Watch Ultra">
                     <h4>Apple Watch Ultra</h4>
                     <ul>
-                        <li><i class="fas fa-check"></i>Rugged titanium case</li>
-                        <li><i class="fas fa-check"></i>49mm display</li>
-                        <li><i class="fas fa-check"></i>Dual-frequency GPS</li>
-                        <li><i class="fas fa-check"></i>upto 36 hours battery life</li>
-                        <li><i class="fas fa-check"></i>wr100 water ressistance</li>
+                        <li><i class="fas fa-check"></i> Rugged titanium case</li>
+                        <li><i class="fas fa-check"></i> 49mm display</li>
+                        <li><i class="fas fa-check"></i> Dual-frequency GPS</li>
+                        <li><i class="fas fa-check"></i> Up to 36 hours battery life</li>
+                        <li><i class="fas fa-check"></i> WR100 water resistance</li>
                     </ul>
                     <div class="comparison-price">₹89,900</div>
-                    <a href="#" class="product-btn">Buy now</a>
+                    <a href="#" class="product-btn"data-product-name="watch ultra">Buy Now</a>
                 </div>
                 <div class="comparison-card">
-                    <img src="watch.png" alt="Apple Watch Series 8">
-                    <h4>Apple Watch Series</h4>
+                    <img src="resources/watch.png" alt="Apple Watch Series 8">
+                    <h4>Apple Watch Series 8</h4>
                     <ul>
-                        <li><i class="fas-fa check"></i>Aluminium and stainless steel cases</li>
-                        <li><i class="fas fa-check"></i>41mm or 45mm display</li>
-                        <li><i class="fas fa-check"></i>Advanced health sensors</li>
-                        <li><i class="fas fa-check"></i>upto 8 hours battery life</li>
-                        <li><i class="fas fa-check"></i>wr50 water ressistance</li>
+                        <li><i class="fas fa-check"></i> Aluminum and stainless steel cases</li>
+                        <li><i class="fas fa-check"></i> 41mm or 45mm display</li>
+                        <li><i class="fas fa-check"></i> Advanced health sensors</li>
+                        <li><i class="fas fa-check"></i> Up to 18 hours battery life</li>
+                        <li><i class="fas fa-check"></i> WR50 water resistance</li>
                     </ul>
-                    <div class="comparison-price">staring at ₹89,900</div>
-                    <a href="#" class="product-btn">Buy Now</a>
+                    <div class="comparison-price">₹59,900</div>
+                    <a href="#" class="product-btn"data-product-name="watch 8">Buy Now</a>
                 </div>
                 <div class="comparison-card">
-                    <img src="watch se.png" alt="Apple Wtch SE">
-                    <h4>Apple Watch Se </h4>
+                    <img src="resources/watch se.png" alt="Apple Watch SE">
+                    <h4>Apple Watch SE</h4>
                     <ul>
-                        <li><i class=fas fa-check></i>Aluminium</li>
-                        <li><i class=fas fa-check></i>40mm or 44mm Display</li>
-                        <li><i class=fas fa-check></i>Essential health and safety features</li>
-                        <li><i class=fas fa-check></i>upto 18 hours battery life</li>
-                        <li><i class=fas fa-check></i>wr50 water ressistance</li>
+                        <li><i class="fas fa-check"></i> Aluminum case</li>
+                        <li><i class="fas fa-check"></i> 40mm or 44mm display</li>
+                        <li><i class="fas fa-check"></i> Essential health and safety features</li>
+                        <li><i class="fas fa-check"></i> Up to 18 hours battery life</li>
+                        <li><i class="fas fa-check"></i> WR50 water resistance</li>
                     </ul>
-                    <div class="comparison-price">staring at ₹29,900</div>
-                    <a href="#" class="product-btn">Buy Now</a>
+                    <div class="comparison-price">₹29,900</div>
+                    <a href="#" class="product-btn"data-product-name="watch SE">Buy Now</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- airpods Section -->
+    <section class="product-section" id="airpods-section">
+        <h2>Airpods</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="resources/airpods.png" alt="Apple airpods 3 pro">
+                <h3>Apple airpods 3 pro</h3>
+                <p>unbelivable ear buds.</p>
+                <div class="product-price">Starting at ₹25,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="airpods 3">Buy</a>
+            </div>
+            <div class="product-card">
+                <img src="resources/airpods.png" alt="Apple airpods pro">
+                <h3>Apple airpods pro</h3>
+                <p>At your fingertips.</p>
+                <div class="product-price">Starting at ₹18,999</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="airpods pro">Buy</a>
+            </div>
 
+            <!-- Tv & Home Section -->
+    <section class="product-section" id="Tv & Home-section">
+        <h2>Tv & Home products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="resources/homepod.jpg" alt="Apple homepod">
+                <h3>Apple home pod</h3>
+                <p>unbelivable power.</p>
+                <div class="product-price">Starting at ₹10,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="home pod">Buy</a>
+            </div>
+            <!-- Accessories Section -->
+    <section class="product-section" id="Accessories-section">
+        <h2> Accessories products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="resources/applepencil.png" alt="Apple pencil">
+                <h3>Apple pencil</h3>
+                <p>compactable with ipads.</p>
+                <div class="product-price">Starting at ₹11,900</div>
+                <a href="#" class="product-btn">Learn more</a>
+                <a href="#" class="product-btn"data-product-name="pencil">Buy</a>
+            </div>
+
+            <!-- support Section -->
+    <section class="product-section" id="support-section">
+        <h2> support phone number (Indian)</h2>
+        <h3><li>+91 000800 040 1966 </li></h3>
+        <h2>Email</h2>
+        <h3><li>india_support@apple.com</li></h3>
+
+
+    <!-- Why Choose Apple Section -->
     <section class="why-choose-apple">
         <h2>Why Choose Apple?</h2>
         <div class="why-choose-content">
             <div class="why-choose-item">
                 <i class="fas fa-shield-alt"></i>
                 <h3>Privacy and Security</h3>
-                <p>Apple Devices are designed to protect your personel information and data</p>
+                <p>Apple devices are designed to protect your personal information and data.</p>
             </div>
             <div class="why-choose-item">
                 <i class="fas fa-leaf"></i>
-                <h3>Envioronmental Responsibility</h3>
-                <p>Apple is commited to reducing the envioronmental impact through sustainable practices.</p>
+                <h3>Environmental Responsibility</h3>
+                <p>Apple is committed to reducing environmental impact through sustainable practices.</p>
             </div>
             <div class="why-choose-item">
                 <i class="fas fa-heart"></i>
                 <h3>Customer Support</h3>
-                <p>Apple's customer support is known for its excellence,providing help whenever you need it.</p>
+                <p>Apple's customer support is known for its excellence, providing help whenever you need it.</p>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bottom-footer">
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales Policy</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2024 Apple Inc. All rights reserved.
+            &copy;Made by: Agrim sharan and Mimo patra.
+        </p>
+    </footer>
 </body>
 </html>
