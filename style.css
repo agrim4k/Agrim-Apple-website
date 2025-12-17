@@ -53,36 +53,6 @@ body {
   font-size: 18px;
   color: #fff; /* Make the icons white */
 }
-
-#search-toggle-link {
-    /* Style it to look like a navigation item or button */
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid white;
-    border-radius: 4px;
-    cursor: pointer;
-    /* Add hover effects if desired */
-    transition: background-color 0.3s;
-}
-
-#search-toggle-link:hover {
-    background-color: #555;
-}
-
-/* ... rest of the .search-container styles remain the same ... */
-
-.search-container {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-}
-/* ... etc ... */
-
-
 /* Mobile Menu Toggle */
 .menu-toggle {
   display: none;
@@ -265,7 +235,6 @@ body {
 .product-card .product-btn:hover {
   background-color: #005bb5;
 }
-
 /* Comparison Section */
 .comparison-section {
   margin-top: 40px;
