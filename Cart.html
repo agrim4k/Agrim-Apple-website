@@ -10,6 +10,29 @@
   <div class="col-75">
     <div class="container">
       <form action="/action_page.php">
+        </form>
+        </div>
+        <div class="col-25">
+  <div class="container">
+    <!-- ID 'cart-count' allows JS to update the number next to the icon -->
+    <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b id="cart-count">0</b></span></h4>
+    
+    <hr>
+    
+    <!-- This ID is where the items will be injected -->
+    <div id="cart-items-list">
+        <p style="color: gray;">Your cart is empty</p>
+    </div>
+    
+    <hr>
+    
+    <!-- ID 'cart-total' allows JS to update the price -->
+    <p>Total <span class="price" style="color:black"><b id="cart-total">₹0</b></span></p>
+  </div>
+</div>
+
+<!-- VERY IMPORTANT: Link your script before the closing body tag -->
+<script src="script.js"></script>
       
         <div class="row">
           <div class="col-50">
@@ -65,23 +88,16 @@
         </div>
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          <input type="checkbox" checked="unchecked" name="Engrave">Engrave 
         </label>
         <input type="submit" value="Continue to checkout" class="btn">
       </form>
     </div>
   </div>
-  <div class="col-25">
-    <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-    </div>
-  </div>
 </div>
-
+<script defer src="script.js"></script>
 </body>
 </html>
+
+
+
