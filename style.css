@@ -409,53 +409,6 @@ body:has(input[value="dim"]:checked) {
 
 /* //////////////////////////////////////////
 /  Article Styles //////////////////////// */
-
-.article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5em 2em;
-}
-
-h1,
-h2,
-p,
-blockquote {
-  width: 100%;
-  max-width: 600px;
-  box-sizing: border-box;
-}
-
-h1 {
-  font-size: 3em;
-  margin: 1.4em 0 0.6em;
-}
-
-h2 {
-  font-size: 2em;
-  margin: 1.4em 0 0.6em;
-}
-
-p {
-  line-height: 160%;
-  margin: 0 0 1em;
-}
-
-blockquote {
-  margin-left: 0;
-  margin-right: 0;
-  font-size: 2em;
-  padding-left: 1em;
-  border-left: 0.1em solid currentColor;
-}
-
-figure {
-  margin: 1em 0 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 figcaption {
   max-width: 600px;
   margin-top: 1em;
@@ -928,7 +881,11 @@ a:hover {
   .mobile-nav.active {
       display: block;
   }
-}
+  }
+  
+  .hero-buttons a{
+    display:none;
+  }
 .bottom footer{
   max-width:100, 100%;
   color:#333
