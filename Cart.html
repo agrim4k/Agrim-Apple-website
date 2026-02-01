@@ -17,6 +17,7 @@
     
     <!-- This ID is where the items will be injected -->
     <div id="cart-items-list">
+
         <p style="color: gray;">Your cart is empty</p>
     </div>
     
@@ -63,20 +64,23 @@
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="cname">Name of Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
             <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <input type="text" id="numericInput" maxlength="16"name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <p id="errorMessage" style="color: red; display: none;">Error: Only Numbers Allowed </p>
             <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <input type="text" id="text" name="expmonth" placeholder="September" required>
             <div class="row">
               <div class="col-50">
                 <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                <input type="text" id="numericInput1" maxlength="4" name="exp year" placeholder="2018" required>
+            <p id="errorMessage1" style="color: red; display: none;">Error: Only Numbers Allowed </p>
               </div>
               <div class="col-50">
                 <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
+                <input type="text" id="numericInput2" maxlength="3"name="cvv" placeholder="352" required>
+                <p id="errorMessage2" style="color: red; display: none;">Error: Only Numbers Allowed </p>
               </div>
             </div>
           </div>
@@ -91,7 +95,66 @@
     </div>
   </div>
 </div>
-<script defer src="script.js"></script>
+<script>
+  const input = document.getElementById('numericInput');
+const error = document.getElementById('errorMessage');
+
+input.addEventListener('input', function(e) {
+    // Remove any non-digit characters immediately
+    const value = e.target.value;
+    const cleanValue = value.replace(/\D/g, '');
+    
+    // Show error if user typed a non-digit
+    if (value !== cleanValue) {
+        error.style.display = 'block';
+    } else {
+        error.style.display = 'none';
+    }
+    
+    // Update input with only numbers
+    e.target.value = cleanValue;
+}); 
+
+ const input1 = document.getElementById('numericInput1');
+const error1 = document.getElementById('errorMessage1');
+
+input.addEventListener('input', function(e) {
+    // Remove any non-digit characters immediately
+    const value = e.target.value;
+    const cleanValue = value.replace(/\D/g, '');
+    
+    // Show error if user typed a non-digit
+    if (value !== cleanValue) {
+        error.style.display = 'block';
+    } else {
+        error.style.display = 'none';
+    }
+    
+    // Update input with only numbers
+    e.target.value = cleanValue;
+}); 
+
+ const input2 = document.getElementById('numericInput2');
+const error2 = document.getElementById('errorMessage2');
+
+input.addEventListener('input', function(e) {
+    // Remove any non-digit characters immediately
+    const value = e.target.value;
+    const cleanValue = value.replace(/\D/g, '');
+    
+    // Show error if user typed a non-digit
+    if (value !== cleanValue) {
+        error.style.display = 'block';
+    } else {
+        error.style.display = 'none';
+    }
+    
+    // Update input with only numbers
+    e.target.value = cleanValue;
+}); 
+
+
+</script>
 </body>
 </html>
 

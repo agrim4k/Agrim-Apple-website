@@ -69,7 +69,7 @@ document.addEventListener('click', (e) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Select all buttons with the class 'product-btn' or 'buy-now-btn'
-    const buyButtons = document.querySelectorAll('.product-btn, .buy-now-btn');
+    const buyButtons = document.querySelectorAll('.product-btn1, .buy-now-btn1');
 
     buyButtons.forEach(button => {
         button.addEventListener('click', (event) => {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
  
 document.addEventListener('DOMContentLoaded', () => {
     // Select all buttons with the class 'product-btn' or 'buy-now-btn'
-    const buyButtons = document.querySelectorAll('.product-btn, .buy-now-btn');
+    const buyButtons = document.querySelectorAll('.product-btn');
 
     buyButtons.forEach(button => {
         button.addEventListener('click', (event) => {

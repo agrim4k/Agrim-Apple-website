@@ -53,6 +53,16 @@ body {
   font-size: 18px;
   color: #fff; /* Make the icons white */
 }
+.span{
+  display:flex;
+  width:0px;
+  height:30px;
+  background:red;
+  justify-content: center;
+  align-items:center;
+  color:#fff;
+  border-radius:50%;
+}
 /* Mobile Menu Toggle */
 .menu-toggle {
   display: none;
@@ -808,12 +818,22 @@ a:hover {
   font-size: 18px; /* Slightly larger text on hover */
   color: #0071e3; /* Change text color on hover */
 }
+/* Animations */
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-40px);}
+    to{opacity:1; transform:translateY(0);}
+}
 
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s ease;
+}
 
-
-
-
-
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-section {
